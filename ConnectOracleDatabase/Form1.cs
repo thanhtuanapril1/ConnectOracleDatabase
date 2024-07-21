@@ -39,6 +39,7 @@ namespace WindowsFormsApplication1
                 //cmd.CommandText = "select * from otm.TCO_COMPANY";
                 //cmd.CommandType = CommandType.Text;
 
+
                 OracleCommand cmd = new OracleCommand("select * from otm.TCO_COMPANY",conn);
 
                 OracleDataAdapter da = new OracleDataAdapter(cmd);
