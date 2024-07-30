@@ -20,8 +20,9 @@ namespace WindowsFormsApplication1
     public partial class Form1 : Form
     {
         //Initial variable
-        static string connStr = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))" +
-            "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=OTMVN)));User Id=PRODVIEW;Password=Prod-View-OTM-2024;"; 
+        //static string connStr = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.84.1.110)(PORT=1521)))" +
+        //    "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=OTMVN)));User Id=PRODVIEW;Password=Prod-View-OTM-2024;"; 
+        static string connStr = "Data Source=10.84.1.110:1521/OTMVN; User Id=PRODVIEW; Password=Prod-View-OTM-2024;";
         OracleConnection conn = new OracleConnection(connStr);
         public Form1()
         {
